@@ -23,10 +23,10 @@ import java.util.zip.Inflater;
 
 public class CrimeListFragment extends Fragment {
 
+    private static final String SAVED_SUBTITLE_VISIBLE = "subtitle";
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
     private boolean mSubtitleVisible;
-    private static final String SAVED_SUBTITLE_VISIBLE = "subtitle";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

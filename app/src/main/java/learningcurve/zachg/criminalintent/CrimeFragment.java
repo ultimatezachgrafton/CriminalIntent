@@ -151,7 +151,7 @@ public class CrimeFragment extends Fragment {
             String[] queryFields = new String[] {
                     ContactsContract.Contacts.DISPLAY_NAME
             };
-            // Perform query - the ContactUri is tje "where" clause here
+            // Perform query - the ContactUri is the "where" clause here
             Cursor c = getActivity().getContentResolver().query(contactUri, queryFields, null,
                     null, null);
             try {
