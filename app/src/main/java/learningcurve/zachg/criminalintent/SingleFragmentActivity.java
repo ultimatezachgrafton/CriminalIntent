@@ -9,13 +9,14 @@ import android.support.v7.app.AppCompatActivity;
 public abstract class SingleFragmentActivity extends AppCompatActivity {
     protected abstract Fragment createFragment();
 
+    // Returns ID of layout that the activity will inflate
     @LayoutRes
     protected int getLayoutResId() {
         return R.layout.activity_fragment;
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResId());
         FragmentManager fm = getSupportFragmentManager();
