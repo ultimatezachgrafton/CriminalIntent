@@ -29,7 +29,7 @@ public class CrimeListFragment extends Fragment {
     private CrimeAdapter mAdapter;
     private boolean mSubtitleVisible;
     private Callbacks mCallbacks;
-    
+
     // Required interface for hosting activities
     public interface Callbacks {
         void onCrimeSelected(Crime crime);
